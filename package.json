@@ -1,0 +1,29 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "fix": "npm run format:fix && npm run lint:fix",
+    "lint": "eslint ./ --ext js",
+    "lint:fix": "eslint ./ --ext js --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.0.1",
+    "chalk-advanced": "^1.0.7",
+    "dbd-soft-ui": "^1.7.13-beta.1",
+    "diff": "^5.1.0",
+    "discord-api-types": "^0.37.55",
+    "discord-dashboard": "^2.3.62",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "prettier": "3.0.2"
+  }
+}
